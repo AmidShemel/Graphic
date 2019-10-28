@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     LineChart lineChart;
     SeekBar seek1, seek2, seek3, seek4, seek5;
-    int resolution = 300;
+    int resolution = 250;
     ArrayList<Entry> yAxis;
     LineData lineData;
 
@@ -136,8 +136,8 @@ public class MainActivity extends AppCompatActivity {
         LineDataSet lineDataSet2 = new LineDataSet(yAxis, "Graph");
 
         lineDataSet2.setDrawCircles(true);
-        lineDataSet2.setColor(Color.BLUE);
-        lineDataSet2.setCircleColor(Color.BLACK);
+        lineDataSet2.setColor(Color.RED);
+        lineDataSet2.setCircleColor(getResources().getColor(R.color.VIOLET));
         lineDataSet2.setCircleRadius(2f);
 
         lineDataSet2.setMode(LineDataSet.Mode.CUBIC_BEZIER);
